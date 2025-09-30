@@ -1,0 +1,212 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #242424;
+    color: #7B61FF;
+}
+
+.prenom {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blaze {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+    color: #7B61FF;
+    font-size: 8rem;
+    white-space: nowrap;
+    border-right: 4px solid #7B61FF;
+    overflow: hidden;
+    width: 0;
+    animation: typing 2s steps(20, end) forwards, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0}
+    to { width: 12ch; }
+}
+
+@keyframes blink {
+    50% {border-color: transparent;}
+}
+
+/* Description */
+
+.description {
+    font-size: 1.5rem;
+    color: #7B61FF;
+    background-color: #f8f4ec;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* <-- centre le contenu verticalement */
+}
+
+.description div {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* <-- centre verticalement les enfants (p + img) */
+    text-align: center;
+    gap: 100px;
+}
+
+.description p {
+    margin: 0; /* remet à zéro le margin auto qui faisait bugger */
+}
+
+.description.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.description img {
+    border: solid 2px #7B61FF; 
+    border-radius: 15px;
+    max-height: 200px; /* pour éviter que l’image soit trop grande */
+}
+
+/* Grille pour projet */ 
+
+.projects {
+  padding: 60px 20px;
+  background-color: #242424;
+  color: white;
+  text-align: center;
+}
+
+.projects h2 {
+    color: #7B61FF;
+    font-family: 'Tangerine', cursive;
+    font-size : 4rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: #1e1e1e;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(123, 97, 255, 0.5);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  color: #7B61FF;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.view-more {
+  background-color: #7B61FF;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-more:hover {
+  background-color: #5d4cd1;
+}
+
+/* Animation d’apparition */
+.project-card.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.project-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-title.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.section-title.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Modal de base (caché) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Contenu du modal */
+.modal-content {
+  background-color: #1e1e1e;
+  margin: 10% auto;
+  padding: 30px;
+  border: 1px solid #7B61FF;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 600px;
+  color: white;
+  text-align: left;
+}
+
+/* Bouton de fermeture */
+.close {
+  color: #7B61FF;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #fff;
+}
+
