@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav class="sidebar-menu">
+            <div class="close-btn">&times;</div>
+            <ul>
+                <li><a href="#home">Accueil</a></li> 
+                <li><a href="#projects-section">Mes Projets</a></li>
+                <li><a href="#skills-section">Mes Compétences</a></li>
+                <li><a href="#contact-section">Me Contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="home"></div> <!--Encrage-->
+    <div class="prenom">
+        <h1 class="blaze">Corvol Mathéo</h1>
+    </div>
+
+    <section class="description">
+        <div>
+            <p> Je suis étudiant à l'université de Elbeuf dans une formation BUT MMI (Métiers du Multimédia et de
+                l'Internet). Ici vous pourrez retrouver l'ensemble de mes projets.</p>
+            <img src="Images/Pdp.jpg" alt="Photo de profil">
+        </div>
+    </section>
+
+    <div id="projects-section"></div> <!--Encrage-->
+    <section class="projects">
+        <h2 class="section-title hidden">Mes projets</h2>
+        <div class="projects-grid">
+            <div class="project-card hidden">
+                <img src="Images/Foodtruck.PNG" alt="Projet 1">
+                <h3>FoodTruck</h3>
+                <p>Projet conçu pour une SAE ou le but était de concevoir un site pour un FoodTruck de notre choix.</p>
+                <button class="view-more">Voir plus</button>
+            </div>
+            <div class="project-card hidden">
+                <img src="Images/Billetterie.PNG" alt="Projet 2">
+                <h3>Site Billetterie</h3>
+                <p>Projet conçu pour une SAE ou le but était de concevoir un site de Billetterie pour des événements.
+                </p>
+                <button class="view-more">Voir plus</button>
+            </div>
+            <div class="project-card hidden">
+                <img src="Images/TheBikeRepair.PNG" alt="Projet 3">
+                <h3>The Bike Repair</h3>
+                <p>Projet conçu afin de créer l'identité d'un atelier participatif consacré au vélo.</p>
+                <button class="view-more">Voir plus</button>
+            </div>
+            <div class="project-card hidden">
+                <img src="Images/Film.jpg" alt="Projet 4">
+                <h3>Film Noir et Blanc</h3>
+                <p>Ce film a été réalisé dans le but de produire un film en Noir et Blanc des années 50.</p>
+                <button class="view-more">Voir plus</button>
+            </div>
+            <div class="project-card hidden">
+                <img src="Images/DocteurPoupi.PNG" alt="Projet 5">
+                <h3>Docteur Poupi</h3>
+                <p>Ce projet a été conçu dans le but de créer une mascotte pour "Le rire médecin".</p>
+                <button class="view-more">Voir plus</button>
+            </div>
+            <div class="project-card hidden">
+                <img src="Images/SoccerContest.PNG" alt="Projet 6">
+                <h3>Soccer Contest</h3>
+                <p>Ce projet a été conçu dans le cadre de la Gestion de Projet. Ici le but était de construire un projet
+                    avec les méthodes vues en cours.</p>
+                <button class="view-more">Voir plus</button>
+            </div>
+            <div class="project-card hidden">
+                <img src="Images/LogoSAE202.PNG" alt="Projet 7">
+                <h3>SAE202</h3>
+                <p>Le projet de la fin de ma 1ère année dans ma formation en BUT MMI. Le but ici était de redonner vie
+                    au patrimoine du textile d'Elbeuf.</p>
+                <button class="view-more">Voir plus</button>
+            </div>
+            <div class="project-card hidden">
+                <img src="Images/Linkedin.PNG" alt="Projet 8">
+                <h3>Linkedin</h3>
+                <p>Ici je vous montre la construction de mon Linkedin.</p>
+                <button class="view-more">Voir plus</button>
+            </div>
+            <div class="project-card hidden">
+                <img src="Images/Production Publicitaires.PNG" alt="Projet 9">
+                <h3>Productions Publicitaires</h3>
+                <p>Ici vous pourrez retrouver 2 productions liés à la publicité.</p>
+                <button class="view-more">Voir plus</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>FoodTruck - SAE105 </h2>
+            <p>Dans le cadre de la SAE105, nous avions pour objectif de concevoir un site vitrine pour un foodtruck
+                fictif ou réel, en appliquant les bases de l'intégration web vues en cours.<br><br>
+                J'ai choisi de créer un site pour un foodtruck original, avec une identité visuelle propre, un nom, un
+                logo, et une carte de plats.<br><br>
+                Le site présente les différentes sections classiques d'un site de restauration : <br>
+                - Une page d'accueil<br>
+                - Une carte des plats<br>
+                - Une présentation du foodtruck<br>
+                - Et une page de contact<br><br>
+                J'ai aussi travaillé sur l'esthétique du site (choix des couleurs, typographies, mise en page), tout en
+                respectant l'accessibilité et la cohérence visuelle.<br><br>
+                Cette SAE m'a permis de mieux comprendre l'importance d'une hiérarchie visuelle, de structurer
+                correctement mon HTML, et de progresser sur la mise en page CSS.</p>
+            <h3>Les compétences utilisées :</h3>
+            <ul class="modal-skills-list">
+                <li><i class="fab fa-html5"></i> HTML </li>
+                <li><i class="fab fa-css3-alt"></i> CSS </li>
+            </ul>
+            <h3>Des images qui peuvent vous plaire</h3>
+            <img src="Images/Menu-foodtruck.PNG" alt="Menu Foodtruck" class="modal-image">
+            <img src="Images/Horaire-foodtruck.PNG" alt="Menu Foodtruck" class="modal-image">
+            <div class="modal-link-container">
+                <a href="https://corvomat.tpweb.univ-rouen.fr/sae105/" target="_blank" class="contact-button">Visiter le
+                    site du FoodTruck</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Site Billetterie - SAE203 </h2>
+            <p>Dans le cadre de la SAE203, nous avions pour objectif de concevoir un site de billetterie ou l'on
+                pouvait réserver, annuler l'événement de notre choix pour l'utilisateur et modifier, ajouter un événement
+                pour le côté administrateur.<br><br>
+                Cette SAE avait pour but de travailler le PHP et les bases de données avec MySQL, le côté design n'était
+                pas demander mais j'ai
+                décidé de m'en occuper pour améliorer mes compétences dans le CSS<br><br>
+                Le site présente ces différentes sections : <br>
+                - Une page d'accueil avec des catégories pour chaque événements<br>
+                - Une page connexion/déconnexion<br>
+                - Une page réservation<br>
+                - Une page mes réservations<br>
+                - Une page ajouter événement (ADMIN)<br>
+                - Une page modifier événement (ADMIN) <br><br>
+                Cette SAE m'a permit d'apprendre à lier PHP et MySQL et c'était un travail vraiment plaisaint car j'ai
+                fais un site de billetterie qui aurait
+                pu servir à n'importe quelle entreprise. Cela nous a permit de voir comment cela pouvait se passer dans
+                la vraie vie.</p>
+            <h3>Les compétences utilisées :</h3>
+            <ul class="modal-skills-list">
+                <li><i class="fab fa-html5"></i> HTML </li>
+                <li><i class="fab fa-css3-alt"></i> CSS </li>
+                <li><i class="fab fa-php"></i> PHP </li>
+                <li><i class="fas fa-database"></i> MySQL </li>
+                <li><i class="fab fa-js-square"></i> JS </li>
+            </ul>
+            <h3>Des images qui peuvent vous plaire</h3>
+            <img src="Images/connexion_SAE203.PNG" alt="Connexion SAE203" class="modal-image">
+            <img src="Images/reservation_SAE203.PNG" alt="Reservation SAE203" class="modal-image">
+            <img src="Images/SQL_SAE203.PNG" alt="SQL SAE203" class="modal-image">
+            <div class="modal-link-container">
+                <a href="https://corvomat.tpweb.univ-rouen.fr/SAE203/" target="_blank" class="contact-button">Visiter le
+                    site de la Billetterie</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal3">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>The Bike Repair</h2>
+            <p>Dans le cadre de ce projet, nous avions pour objectif de concevoir une identitée visuelle pour un atelier
+                participatif
+                consacré au vélo.<br><br>
+                Cette conception avait pour but d'utiliser la typographie comme logo et donc jouer avec la typo, les
+                couleurs et créer un
+                univers spécifique.<br><br>
+                Ce projet contient : <br>
+                - Un logo principal, un logo réseau et un favicon<br>
+                - La typographie<br>
+                - Les couleurs<br>
+                - Flyers/Affiche<br>
+                - Maquette site web Ordinateur/Mobile<br>
+                - Mockup <br><br>
+                Ce projet m'a permit de progresser dans les compétences de l'univers graphique et d'accroître mes
+                connaissances dans ce domaine.</p>
+            <h3>Les compétences utilisées :</h3>
+            <ul class="modal-skills-list">
+                <li><i class="fas fa-pencil-ruler"></i> Design Graphique </li>
+                <li><iconify-icon icon="simple-icons:adobephotoshop"></iconify-icon> Adobe Photoshop </li>
+                <li><iconify-icon icon="simple-icons:adobeillustrator"></iconify-icon> Adobe Illustrator </li>
+            </ul>
+            <h3>Des images qui peuvent vous plaire</h3>
+            <img src="Images/Affiche_TBR.PNG" alt="Affiche TheBikeRepair" class="modal-image">
+            <img src="Images/MaquetteWeb_TBR.PNG" alt="Maquette Web TheBikeRepair" class="modal-image">
+            <div class="modal-link-container">
+                <a href="Documents/TheBikeRepair.pdf" target="_blank" class="contact-button">PDF The Bike Repair</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal4">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Film Noir et Blanc</h2>
+            <p>Dans le cadre de ce projet, nous avions pour objectif de concevoir un film en noir et blanc des années
+                50.<br><br>
+                Ce film avait pour but de mettre en application la théorie que l'on a apprise sur les films des années
+                50 à savoir
+                le jeu de lumière, de profondeur, du décors.<br><br>
+                Ce projet m'a permit de progresser dans les compétences de l'univers graphique et d'accroître mes
+                connaissances dans ce domaine.</p>
+            <h3>Les compétences utilisées :</h3>
+            <ul class="modal-skills-list">
+                <li><iconify-icon icon="simple-icons:adobepremierepro"></iconify-icon> Adobe Première Pro </li>
+                <li><i class="fas fa-film"></i> Audiovisuel </li>
+                <li><i class="fas fa-camera-retro"></i> Photographie </li>
+                <li><i class="fas fa-users"></i> Travail d'équipe </li>
+            </ul>
+            <h3>Je vous laisse regarder le film (durée : 2:16)</h3>
+            <div class="modal-link-container">
+                <a href="https://youtu.be/hdKGqa2H9DY" target="_blank" class="contact-button">Lien vers le film</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal5">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Docteur Poupi - SAE201</h2>
+            <p>Dans le cadre de cete SAE201, l'objectif était de créer une mascotte pour l'association "Le rire médecin"
+                qui incarne les valeurs de l’association :
+                🎈 bienveillance, 🎭 humour, ❤️ réconfort et 👶 proximité avec les enfants hospitalisés. Ce projet fait
+                partie du cadre de la gestion de Projet.
+                <br><br>
+                Ce projet nous a permis de travailler en équipe, de mieux comprendre les attentes d'un client
+                associatif, et d'explorer les usages liés à la communication affective et visuelle auprès des enfants.
+            </p>
+            <h3>Les compétences utilisées :</h3>
+            <ul class="modal-skills-list">
+                <li><i class="fas fa-project-diagram"></i> Gestion de Projet </li>
+                <li><i class="fas fa-users"></i> Travail d'équipe </li>
+            </ul>
+            <div class="modal-link-container">
+                <a href="Documents/SAE 201.pdf" target="_blank" class="contact-button">PDF SAE_201</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal6">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Soccer Contest - SAE 106</h2>
+            <p>Ce projet a été conçu dans le cadre de la gestion de projet pour la SAE 106, l'objectif était de créer un
+                événement et mettre en place
+                une gestion de projet effiace pour concevoir et déployer un plan de communication autour d'un événement.
+                L'objectif était de bien
+                communiquer sur un événement de notre choix.<br><br>
+                Ce projet nous a donc permis de maîtriser d'avantage la gestion de projet en équipe ainsi que la
+                conception de cahier des charges
+                en définissant les objectifs, élaborer une stratégie et assurer le bon déroulement de la communication.
+            </p>
+            <h3>Les compétences utilisées :</h3>
+            <ul class="modal-skills-list">
+                <li><i class="fas fa-project-diagram"></i> Gestion de Projet </li>
+                <li><i class="fas fa-users"></i> Travail d'équipe </li>
+            </ul>
+            <div class="modal-link-container">
+                <a href="Documents/SAE 106.pdf" target="_blank" class="contact-button">PDF SAE_106</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal7">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Mémorium d'Elbeuf - SAE 202</h2>
+            <p>Cette SAE est la dernière SAE de ma 1ère année en BUT MMI. Elle regroupe la totalité des ressources
+                travaillées dans l'année.
+                L'objectif final était de concevoir un Musée qui regroupe et parle du patrimoine textile
+                d'Elbeuf.<br><br>
+                Pour cela il a fallut construire une charte graphique complète avec logo, univers graphique etc..<br>
+                Une communication regroupant la stratégie, le public cible, les moyens de communications utilisées.<br>
+                Une partie audiovisuel qui comportait la photographie utilisé pour les autres parties du projet et la
+                vidéo pour un teaser du Musée.<br>
+                Et pour finir un CMS sur WordPress qui sert à informer et communiquer sur le Musée d'Elbeuf.<br>
+            </p>
+            <h3>Les compétences utilisées :</h3>
+            <ul class="modal-skills-list">
+                <li><i class="fab fa-wordpress"></i> WordPress </li>
+                <li><i class="fab fa-figma"></i> Figma </li>
+            </ul>
+            <h3>Des images qui peuvent vous plaire</h3>
+            <p>Logo confectionné par moi</p>
+            <img src="Images/LogoSAE202.PNG" alt="Logo SAE202_Moi" class="modal-image">
+            <p>Logo final utilisé pour la SAE</p>
+            <img src="Images/logo final memorium.jpg" alt="Logo final SAE202" class="modal-image">
+            <p>Étant donné que je me suis occupé particulièrement du CMS de la SAE je vous présente celui-ci mais
+                n'hésitez pas à aller voir le CMS car il contient des photographies dont j'ai pu participé.</p>
+            <img src="Images/cms.PNG" alt="CMS" class="modal-image">
+            <img src="Images/Wireframe.PNG" alt="Wireframe" class="modal-image">
+            <div class="modal-link-container">
+                <a href="https://corvomat.tpweb.univ-rouen.fr/SAE202/" target="_blank" class="contact-button">Visiter le
+                    site du Mémorium d'Elbeuf</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal8">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Linkedin - SAE204</h2>
+            <p>Cette SAE a eu pour but de confectionner notre profil Linkedin pour notre recherche de stage lors de la
+                2ème année.<br><br>
+                Cela permet de prendre de l'avance pour notre recherche de stage et même l'envisager pour l'alternance
+                lors de la 3ème année.
+            </p>
+            <p>
+                Pour avoir un bon Linkedin il faut respecter un certains nombres de points :<br>
+                - Avoir de bonne relation (qualité > quantité) <br>
+                - Poster régulièrement <br>
+                - Partager, Commenter, Etre actif <br>
+            </p>
+            <div class="modal-link-container">
+                <a href="https://www.linkedin.com/in/matheo-corvol-58b05335a/" target="_blank"
+                    class="contact-button">Lien vers mon Linkedin</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal9">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Productions Publicitaires</h2>
+            <p>
+                J'ai produit 2 publicités. Une pour un Atelier coiffure où le but était de construire un flyers pour
+                l'atelier. Et l'autre était de faire une
+                bannière web pour un produit Sephora.
+            </p>
+            <h2>Atelier Coiffure</h2>
+            <p>L'objectif comme dit précédemment est de produire un flyers pour un Atelier Coiffure. Il faut donc faire
+                attention à ne pas surcharger le flyer
+                mais avoir les bonnes informations.
+            </p>
+            <img src="Images/AtelierCoiffure.PNG" alt="Atelier Coiffure" class="modal-image">
+            <h2>Bannière Web Sephora</h2>
+            <p>L'objectif comme dit précédemment est de produire une bannière Web pour le site Sephora afin de valoriser
+                leurs produits de beauté. J'ai donc utilisé la
+                fraicheur et donc le bleu car c'est un produit hydratant et essayer d'entourer le produit avec de l'eau
+                pour accenturer ce côté.
+            </p>
+            <img src="Images/Bannière_Sephora.jpg" alt="Bannière Sephora" class="modal-image">
+            <h3>Les compétences utilisées :</h3>
+            <ul class="modal-skills-list">
+                <li><i class="fas fa-pencil-ruler"></i> Design Graphique </li>
+                <li><iconify-icon icon="simple-icons:adobephotoshop"></iconify-icon> Adobe Photoshop </li>
+                <li><iconify-icon icon="simple-icons:adobeillustrator"></iconify-icon> Adobe Illustrator </li>
+            </ul>
+            <div class="modal-link-container">
+                <a href="Documents/AtelierCoiffure.pdf" target="_blank" class="contact-button">PDF Atelier Coiffure</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Compétences-->
+    <div id="skills-section"></div> <!--Encrage-->
+    <section class="skills">
+        <h2>Mes compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-card hidden">
+                <i class="fab fa-html5"></i>
+                <p>HTML</p>
+            </div>
+            <div class="skill-card hidden">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS</p>
+            </div>
+            <div class="skill-card hidden">
+                <i class="fab fa-js-square"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-card hidden">
+                <i class="fab fa-php"></i>
+                <p>PHP</p>
+            </div>
+            <div class="skill-card hidden">
+                <i class="fas fa-database"></i>
+                <p>MySQL</p>
+            </div>
+            <div class="skill-card hidden">
+                <i class="fab fa-wordpress"></i>
+                <p>WordPress</p>
+            </div>
+            <div class="skill-card hidden">
+                <i class="fab fa-figma"></i>
+                <p>Figma</p>
+            </div>
+            <div class="skill-card hidden">
+                <i class="fas fa-pencil-ruler"></i>
+                <p>Design graphique</p>
+            </div>
+            <div class="skill-card hidden">
+                <iconify-icon icon="simple-icons:adobephotoshop"></iconify-icon>
+                <p>Adobe Photoshop</p>
+            </div>
+            <div class="skill-card hidden">
+                <iconify-icon icon="simple-icons:adobepremierepro"></iconify-icon>
+                <p>Adobe Illustrator</p>
+            </div>
+            <div class="skill-card hidden">
+                <iconify-icon icon="simple-icons:adobeillustrator"></iconify-icon>
+                <p>Adobe Première Pro</p>
+            </div>
+            <div class="skill-card hidden">
+                <i class="fas fa-film"></i>
+                <p>Audiovisuel</p>
+            </div>
+            <div class="skill-card hidden">
+                <i class="fas fa-camera-retro"></i>
+                <p>Photographie</p>
+            </div>
+            <div class="skill-card hidden">
+                <i class="fas fa-project-diagram"></i>
+                <p>Gestion de projet</p>
+            </div>
+            <div class="skill-card hidden">
+                <i class="fas fa-users"></i>
+                <p>Travail d'équipe</p>
+            </div>
+            <div class="skill-card hidden">
+                <i class="fas fa-object-group"></i>
+                <p>UX/UI</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Mes Contactes-->
+
+    <div id="contact-section"></div> <!--Encrage-->
+    <section class="contact">
+        <h2>Contactez-moi</h2>
+        <div class="contact-content">
+            <div class="contact-item hidden">
+                <h3>Linkedin</h3>
+                <div class="qr-code-placeholder">
+                    <img src="Images/LinkedinQR.PNG" alt="QR Code LinkedIn">
+                    <a href="https://www.linkedin.com/in/matheo-corvol-58b05335a/" target="_blank"
+                        class="contact-button">Visiter mon profil</a>
+                </div>
+            </div>
+            <div class="contact-item hidden">
+                <h3>Envoyez-moi un e-mail</h3>
+                <p>Discutons de vos projets et n'hésitez pas à me contacter !</p>
+                <a href="mailto:matheo.corvol@univ-rouen.fr" class="contact-button">matheo.corvol@univ-rouen.fr</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
