@@ -1,0 +1,8 @@
+# Sauvegarde locale des images avant compression : volumineuse et superflue
+# une fois le résultat validé. Supprimable manuellement.
+Images_original_backup/
+
+# Fichiers générés par Windows / macOS
+Thumbs.db
+desktop.ini
+.DS_Store
